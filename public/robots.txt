@@ -3,7 +3,7 @@ Allow: /
 Disallow: /admin
 Disallow: /private
 
-Sitemap: https://ketakibharati.github.io/sitemap.xml
+Sitemap: https://ketakibharati8.github.io/ketakibharati.github.io/sitemap.xml
 
 # Specific rules for search engines
 User-agent: Googlebot

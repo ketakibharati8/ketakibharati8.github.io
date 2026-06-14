@@ -5,10 +5,10 @@
   "type": "module",
   "description": "Portfolio website for Ketaki Bharati - Software Development Engineer",
   "author": "Ketaki Bharati",
-  "homepage": "https://ketakibharati.github.io/",
+  "homepage": "https://ketakibharati8.github.io/ketakibharati.github.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ketakibharati8/portfolio.git"
+    "url": "https://github.com/ketakibharati8/ketakibharati.github.io.git"
   },
   "scripts": {
     "dev": "vite",
@@ -16,8 +16,8 @@
     "preview": "vite preview",
     "optimize-images": "node scripts/optimize-images.js",
     "deploy": "npm run build && gh-pages -d dist",
-    "lighthouse": "npx -y lighthouse https://ketakibharati.github.io/ --output html --output-path ./reports/lighthouse.html --chrome-flags=\"--no-sandbox --headless\"",
-    "lhci:collect": "lhci collect --url=https://ketakibharati.github.io/",
+    "lighthouse": "npx -y lighthouse https://ketakibharati8.github.io/ketakibharati.github.io/ --output html --output-path ./reports/lighthouse.html --chrome-flags=\"--no-sandbox --headless\"",
+    "lhci:collect": "lhci collect --url=https://ketakibharati8.github.io/ketakibharati.github.io/",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest",
     "test:coverage": "jest --coverage"

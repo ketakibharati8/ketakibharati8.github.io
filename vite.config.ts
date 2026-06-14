@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   // Base path for production. For a user/organization site (repo named `username.github.io`),
   // the base should be root '/'.
-  base: '/',
+  base: '/ketakibharati.github.io/',
   server: {
     port: 3000,
     open: true,
