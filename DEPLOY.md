@@ -47,7 +47,7 @@ Image & 3D guidance
 Tools & commands
 - Run a Lighthouse audit locally (Chrome required):
 ```powershell
-npx -y lighthouse https://ketakibharati.github.io/ --output html --output-path ./reports/lighthouse.html --chrome-flags="--no-sandbox --headless"
+npx -y lighthouse https://ketakibharati8.github.io/ --output html --output-path ./reports/lighthouse.html --chrome-flags="--no-sandbox --headless"
 ```
 
 - Run Lighthouse against a local preview (build + preview in background):

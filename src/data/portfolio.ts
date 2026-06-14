@@ -132,7 +132,7 @@ export const projects = [
     technologies: ['Java', 'OOP', 'Multithreading', 'HashMap', 'Concurrency', 'JUnit'],
     category: 'Backend',
     tags: ['concurrency', 'performance', 'data-structures'],
-    liveUrl: 'https://skylink-jild.onrender.com/',
+    liveUrl: 'https://airstack-lzua.onrender.com/',
     repoUrl: 'https://github.com/ketakibharati8/airstack',
     imageUrl: '/projects/skylink.png',
     highlights: [

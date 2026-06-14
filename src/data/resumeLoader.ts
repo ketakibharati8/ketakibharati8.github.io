@@ -109,7 +109,7 @@ const resumeData: Resume = {
     {
       name: "AirStack",
       type: "Live",
-      live_url: "https://skylink-jild.onrender.com/",
+      live_url: "https://airstack-lzua.onrender.com/",
       repo_url: "https://github.com/ketakibharati8/airstack",
       summary: "Java-based Airline Reservation System implementing OOP principles and in-memory data structures for efficient flight search, seat allocation, and booking management.",
       technical_details: [
