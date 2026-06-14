@@ -1,0 +1,60 @@
+{
+  "name": "ketaki-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Portfolio website for Ketaki Bharati - Software Development Engineer",
+  "author": "Ketaki Bharati",
+  "homepage": "https://ketakibharati.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ketakibharati8/portfolio.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "optimize-images": "node scripts/optimize-images.js",
+    "deploy": "npm run build && gh-pages -d dist",
+    "lighthouse": "npx -y lighthouse https://ketakibharati.github.io/ --output html --output-path ./reports/lighthouse.html --chrome-flags=\"--no-sandbox --headless\"",
+    "lhci:collect": "lhci collect --url=https://ketakibharati.github.io/",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@sentry/browser": "^10.27.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.1.1",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.0",
+    "terser": "^5.44.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3",
+    "vite": "^7.2.4"
+  }
+}

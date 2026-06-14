@@ -1,0 +1,94 @@
+{
+  "personal": {
+    "name": "Ketaki Bharati",
+    "role": "Software Development Engineer",
+    "phone": "+91 8888574391",
+    "email": "ketakisbharati@gmail.com",
+    "location": "Pune, Maharashtra, India",
+    "short_bio": "Software Development Engineer focused on high-performance FinTech systems. Skilled in distributed systems, Kafka pipelines, microservices, and backend engineering."
+  },
+  "education": [
+    {
+      "institution": "Vishwakarma Institute of Information Technology",
+      "location": "Pune, Maharashtra, India",
+      "degree": "B. Tech. Electronics and Telecommunications Engineering",
+      "dates": "August 2021 – May 2025",
+      "cgpa": "8.93"
+    }
+  ],
+  "work_experience": [
+    {
+      "title": "Software Development Engineer - I",
+      "company": "PayU Payments",
+      "location": "Bengaluru, Karnataka, India",
+      "dates": "Jan 2026 - Present",
+      "highlights": [
+        "Re-architected Kafka consumption layer for 32+ topics using PayU's kafka-framework, implementing 3-tier exception classification (Ignorable/Permanent/Transient) with DLQ pipeline for Kafka Topic Migration.",
+        "Implemented Grid-based 3DS authentication (OTP alternative) for ICICI - Delivered GridAuthProcessor, two-tier eligibility, challenge-UI, admin configurations and reporting across 5 microservices.",
+        "Built end-to-end GCOT request/response handling, including status and card-state mapping and error paths for invalid PAN, missing cards.",
+        "Built SMS ShortCode flow so cardholders can unblock a soft-blocked card by linking mobile number to the bank and triggering unblock through customer-service API and did reporting as well.",
+        "Led NPCI SecureNxt (3DS 2.0) backend delivery and implemented BIN-level issuer validations - reduced issuer onboarding time by ~40%, accelerating time-to-production for Rupay flows.",
+        "Worked on assigned bugs from QA and self-identified bugs as part of sprint releases."
+      ]
+    },
+    {
+      "title": "Engineering Intern",
+      "company": "PayU Payments",
+      "location": "Bengaluru, Karnataka, India",
+      "dates": "June 2025 - Dec 2025",
+      "highlights": [
+        "Built dynamic database failover for the ACS datastore layer - implemented configurable primary vs secondary database switching for ACS, driving domain DB sync/failover monitoring from global config.",
+        "Implemented CSV bulk upload for ICICI - issuer-facing file uploads for card and customer data, including per bank column layouts from config, row by row checks and clear success/failure feedback.",
+        "Delivered different reports including EMI transaction report, I-view and SI-hub notifications reports on admin portal.",
+        "Strengthened validation logic - increased code coverage by ~25% and decreased regression incidents."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Map My Ganapati",
+      "type": "Live",
+      "live_url": "https://mapmyganpati.vercel.app/",
+      "summary": "City-scale festival navigation web app enabling devotees to explore and find 150+ Ganpati pandals with precise locations, aarti timings, and photos.",
+      "technical_details": [
+        "Built using Next.js, Firebase, and Leaflet.js (OpenStreetMap), achieving 99.9% uptime and managing 5,000+ concurrent users during peak festival hours.",
+        "Configured Infrastructure as Code (IaC) using AWS CloudFormation templates to ensure scalable, reliable deployment.",
+        "Deployed frontend on Vercel and backend on Firebase, cutting hosting costs by 100% compared to Google Maps API."
+      ]
+    },
+    {
+      "name": "AirStack",
+      "type": "Live",
+      "live_url": "https://skylink-jild.onrender.com/",
+      "repo_url": "https://github.com/ketakibharati8/airstack",
+      "summary": "Java-based Airline Reservation System implementing OOP principles and in-memory data structures for efficient flight search, seat allocation, and booking management.",
+      "technical_details": [
+        "Engineered a Java-based Airline Reservation System implementing OOP principles and in-memory data structures (HashMap, etc.) for efficient flight search, seat allocation, and booking management.",
+        "Designed safe seat booking using synchronized access and concurrent queues, eliminating race conditions, and preventing double bookings across 100+ parallel transactions.",
+        "Optimized data lookups through HashMap caching, achieving O(1) retrieval time and reducing average booking latency by 80% compared to naive list traversal."
+      ]
+    }
+  ],
+  "technical_skills": {
+    "languages": ["Java", "JavaScript"],
+    "tools": ["Spring Boot", "Vert.x", "Kafka", "ReactJS", "JUnit", "Mockito", "Git", "GitHub", "Jenkins", "Postman"],
+    "databases": ["MySQL", "SQL", "MongoDB"],
+    "cloud": [],
+    "concepts": ["Data Structures", "OOP", "Multithreading", "Concurrency", "CI/CD", "Microservices"]
+  },
+  "certifications": [
+    "Data Structures and Algorithms using Java by Infosys Springboard",
+    "Becoming Full Stack Developer by LinkedIn",
+    "Oracle SQL Databases"
+  ],
+  "extracurriculars": [
+    "Vice President, NSS VIIT (2023–24): Built and deployed a web app in 48 hrs using open-source tech for event polling and awareness, engaging 3500+ users and increasing blood donation count by 25%."
+  ],
+  "links": {
+    "linkedin": "https://linkedin.com/in/ketakibharati",
+    "github": "https://github.com/ketakibharati8",
+    "resume_drive": "",
+    "mapmyganpati": "https://mapmyganpati.vercel.app/",
+    "airstack_repo": "https://github.com/ketakibharati8/airstack"
+  }
+}

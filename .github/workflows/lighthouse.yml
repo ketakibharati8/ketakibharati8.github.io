@@ -1,0 +1,49 @@
+name: Lighthouse Audit
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Serve dist
+        run: npx http-server ./dist -p 5173 -c-1 &
+
+      - name: Wait for server
+        run: |
+          n=0
+          until $(curl --output /dev/null --silent --head --fail http://127.0.0.1:5173); do
+            n=$((n+1))
+            if [ $n -gt 30 ]; then
+              echo "Server failed to start"; exit 1;
+            fi
+            sleep 1
+          done
+
+      - name: Run Lighthouse
+        run: |
+          mkdir -p reports
+          npx -y lighthouse http://127.0.0.1:5173 --output html --output-path ./reports/lighthouse-ci.html --chrome-flags="--no-sandbox --headless"
+
+      - name: Upload Lighthouse report
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: reports/lighthouse-ci.html
